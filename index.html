@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMW M5 Blog</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+      grid-template-columns: 75% 25%;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 20px 0 px;
+      grid-template-rows: auto 1fr auto;
+      min-height: 200vh;
+    }
+    header {
+      grid-area: header;
+      background-color: #0033a0;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      color: white;
+    }
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #00a3e0;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      align-self: start;
+    }
+    .sidebar h3 {
+      margin-bottom: 15px;
+    }
+    .sidebar ul {
+      list-style: decimal-leading-zero;
+      line-height: 2;
+      padding-left: 20px;
+    }
+    main section:last-child{
+        margin-top: 0;
+    }
+    main {
+      grid-area: main;
+      background-color: #f4f4f4;
+      padding: 25px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    main section {
+      margin-bottom: 30px;
+      background: #ffffff;
+      padding: 20px;
+      border-left: 6px solid #d0103a;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      grid-area: footer;
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        position: static;
+        top:unset;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BMW M5 Evolution</h1>
+    </header>
+    <main>
+      <section>
+        <h2>The Legendary Evolution of BMW M5</h2>
+        <p>Since its debut in 1984, the BMW M5 has evolved from a refined sports sedan into a high-performance monster that still retains daily drivability. Born from BMW's Motorsport division, the M5 set the benchmark for performance luxury sedans — a legacy that continues to roar on roads today</p>
+      </section>
+      <section>
+        <h2>First Blood - E28 M5 (1984)</h2>
+        <p>Based on the regular 5 Series, the E28 M5 hid a BMW M1 engine under its hood — a 3.5L inline-6 producing 286 hp. It looked humble but shocked anyone who challenged it. A true wolf in sheep's clothing.</p>
+      </section>
+      <section>
+        <h2>The V8 Masterpiece - E39 M5 (1998)</h2>
+        <p>The E39 M5 is considered one of the greatest sedans ever. It featured a 4.9L naturally aspirated V8 with 400 hp, mated to a 6-speed manual. Balanced, raw, and beautifully designed — it’s a collector’s dream today</p>
+      </section>
+      <section>
+        <h2>The V10 Era - E60 M5 (2005)</h2>
+        <P>This generation was insane. With a Formula 1-inspired 5.0L V10 engine churning out 507 hp and a screaming redline of 8,250 rpm, the E60 was raw, wild, and unpredictable. It brought the M5 into supercar territory</p>
+      </section>
+      <section>
+        <h2>AWD Revolution - F90 M5 (2018)</h2>
+        <p>The F90 M5 broke tradition by introducing all-wheel drive. But purists could rejoice — it had a switchable RWD mode! Powered by a 4.4L twin-turbo V8 producing 600+ hp, it was a performance and tech marvel</p>
+      </section>
+      <section>
+        <h2>The Modern Marvel - G90 M5 (2024)</h2>
+        <p>The latest M5, launching in 2024, embraces hybrid tech. Expected to produce over 700 hp, it combines eco-conscious engineering with mind-blowing performance. It’s a glimpse into the future of performance sedans</p>
+      </section>
+    </main>
+    <div class="sidebar">
+        <h3>BMW M5 Highlights</h3>
+        <ul>
+            <li>1984 - Birth of the Beast</li>
+            <li>1998 - V8 Power in E39</li>
+            <li>2005 - Screaming V10</li>
+            <li>2018 - AWD Innovation</li>
+            <li>2024 - Hybrid Era Begins</li>
+        </ul>
+    </div>
+    <footer>
+      <p>Visit your nearest BMW showroom to unleash the beast</p>
+    </footer>
+  </div>
+</body>
+</html>
